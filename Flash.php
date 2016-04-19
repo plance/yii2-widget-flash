@@ -4,7 +4,7 @@ namespace plance\widget;
 use Yii;
 use yii\helpers\Url;
 
-class Flash extends yii\base\Widget
+class Flash extends \yii\base\Widget
 {
     public function run()
     {
