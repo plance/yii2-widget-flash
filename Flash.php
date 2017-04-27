@@ -6,6 +6,11 @@ use yii\helpers\Url;
 
 class Flash extends \yii\base\Widget
 {
+	public $classes = [
+		'success' => 'alert alert-success alert-dismissible',
+		'wrong' => 'alert alert-danger alert-dismissible',
+	];
+	
     public function run()
     {
 		return $this -> render('flash');
