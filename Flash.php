@@ -6,10 +6,14 @@ use yii\helpers\Url;
 
 class Flash extends \yii\base\Widget
 {
-	public $classes = [
-		'success' => 'alert alert-success alert-dismissible',
-		'wrong' => 'alert alert-danger alert-dismissible',
-	];
+	public $template_success =	'<div class="alert alert-success alert-dismissible" role="alert">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									{text}
+								</div>';
+	public $template_wrong =	'<div class="alert alert-danger alert-dismissible" role="alert">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									{text}
+								</div>';
 	
     public function run()
     {
